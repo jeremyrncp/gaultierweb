@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GaultierWeb — Agence de Création de Sites Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="logo-bracket">&lt;</span>GaultierWeb<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#location">Localisation</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#social">Réseaux</a></li>
+      </ul>
+      <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Démarrer un projet
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__blob blob-1"></div>
+      <div class="hero__blob blob-2"></div>
+    </div>
+    <div class="hero__content container">
+      <div class="hero__badge">Agence Web Créative</div>
+      <h1 class="hero__title">
+        On transforme vos idées<br />
+        en <span class="gradient-text">expériences digitales</span>
+      </h1>
+      <p class="hero__sub">
+        Sites web sur-mesure, rapides et mémorables. De la conception à la mise en ligne, on s'occupe de tout.
+      </p>
+      <div class="hero__actions">
+        <button class="btn btn--primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Lancer mon projet
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+        </button>
+        <button class="btn btn--ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+          Voir nos services
+        </button>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num">50+</span><span class="stat__label">Projets livrés</span></div>
+        <div class="stat__sep"></div>
+        <div class="stat"><span class="stat__num">98%</span><span class="stat__label">Clients satisfaits</span></div>
+        <div class="stat__sep"></div>
+        <div class="stat"><span class="stat__num">5★</span><span class="stat__label">Note moyenne</span></div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ À PROPOS ░░ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__card card-float">
+            <div class="card-icon">🎨</div>
+            <strong>Design unique</strong>
+            <p>Chaque projet est pensé sur-mesure.</p>
+          </div>
+          <div class="about__card card-float delay-1">
+            <div class="card-icon">⚡</div>
+            <strong>Performance &amp; SEO</strong>
+            <p>Sites rapides, indexés, visibles.</p>
+          </div>
+          <div class="about__code">
+            <pre><code><span class="c-key">const</span> <span class="c-var">agency</span> = <span class="c-brace">{</span>
+  name<span class="c-op">:</span> <span class="c-str">"GaultierWeb"</span>,
+  passion<span class="c-op">:</span> <span class="c-str">"100%"</span>,
+  coffee<span class="c-op">:</span> <span class="c-num">∞</span>
+<span class="c-brace">}</span></code></pre>
+          </div>
+        </div>
+        <div class="about__text">
+          <div class="section-label">À propos</div>
+          <h2 class="section-title">Une agence passionnée,<br />au service de votre vision</h2>
+          <p>Chez <strong>GaultierWeb</strong>, on croit que votre site internet est bien plus qu'une vitrine — c'est votre meilleur commercial, disponible 24h/24.</p>
+          <p>Notre équipe allie créativité, technique et stratégie pour concevoir des sites qui convertissent vraiment. Pas de templates génériques : chaque projet part d'une page blanche.</p>
+          <div class="about__values">
+            <div class="value">
+              <div class="value__dot"></div>
+              <div>
+                <strong>Transparence</strong>
+                <p>Vous suivez l'avancement en temps réel, sans surprises.</p>
+              </div>
+            </div>
+            <div class="value">
+              <div class="value__dot"></div>
+              <div>
+                <strong>Réactivité</strong>
+                <p>Réponse garantie sous 24h, livraison dans les délais.</p>
+              </div>
+            </div>
+            <div class="value">
+              <div class="value__dot"></div>
+              <div>
+                <strong>Excellence</strong>
+                <p>Code propre, design soigné, résultats mesurables.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SERVICES ░░ -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Nos services</div>
+        <h2 class="section-title">Tout ce qu'il faut pour<br />briller en ligne</h2>
+        <p class="section-sub">De la stratégie à la mise en production, on couvre l'intégralité de votre présence digitale.</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Création de sites vitrine</h3>
+          <p>Sites élégants et efficaces pour présenter votre activité, vos produits ou vos services avec impact.</p>
+          <ul class="service-card__tags">
+            <li>Design sur-mesure</li><li>Responsive</li><li>SEO Ready</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="service-card__badge">Populaire</div>
+          <div class="service-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </div>
+          <h3>E-commerce</h3>
+          <p>Boutiques en ligne performantes, sécurisées, et optimisées pour maximiser vos conversions.</p>
+          <ul class="service-card__tags">
+            <li>Sylius</li><li>Shopify</li><li>Paiement sécurisé</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Applications web et mobile</h3>
+          <p>Outils métiers, plateformes SaaS, dashboards — des solutions robustes et scalables.</p>
+          <ul class="service-card__tags">
+            <li>Symfony / VueJS</li><li>Capacitorjs</li><li>API REST</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3>SEO &amp; Référencement</h3>
+          <p>Stratégie de contenu, optimisation technique et netlinking pour apparaître en premier sur Google.</p>
+          <ul class="service-card__tags">
+            <li>Audit SEO</li><li>Contenu optimisé</li><li>Analytics</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Refonte &amp; Maintenance</h3>
+          <p>Modernisation de sites existants, mises à jour de sécurité et support technique continu.</p>
+          <ul class="service-card__tags">
+            <li>Audit UX</li><li>Migration</li><li>Support 7j/7</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>Stratégie digitale</h3>
+          <p>Conseil, identité de marque et accompagnement pour définir et piloter votre présence en ligne.</p>
+          <ul class="service-card__tags">
+            <li>Branding</li><li>Conseil</li><li>Roadmap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ LOCALISATION ░░ -->
+  <section id="location" class="section location">
+    <div class="container">
+      <div class="location__grid">
+        <div class="location__info">
+          <div class="section-label">Localisation</div>
+          <h2 class="section-title">Basés en France,<br />actifs partout</h2>
+          <p>Notre agence est implantée au Puy en Velay en région Auvergne Rhône Alpes, mais nous travaillons avec des clients dans toute la France et à l'international — en présentiel ou à distance.</p>
+          <div class="location__details">
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Adresse</strong>
+                <p>7 boulevard docteur chantemesse 43000 Le Puy en Velay</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.14 1.2 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.46-.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Téléphone</strong>
+                <p>+33 6 49 28 66 37</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Horaires</strong>
+                <p>Lundi – Vendredi : 8h – 18h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location__map">
+          <div class="map-placeholder">
+            <div class="map-pin">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="map-label">GaultierWeb — Le Puy en Velay, France</div>
+            <div class="map-grid">
+              <div class="map-road h" style="top:30%"></div>
+              <div class="map-road h" style="top:55%"></div>
+              <div class="map-road h" style="top:75%"></div>
+              <div class="map-road v" style="left:25%"></div>
+              <div class="map-road v" style="left:50%"></div>
+              <div class="map-road v" style="left:72%"></div>
+              <div class="map-block" style="top:10%;left:5%;width:18%;height:16%"></div>
+              <div class="map-block" style="top:10%;left:28%;width:20%;height:16%"></div>
+              <div class="map-block" style="top:10%;left:53%;width:15%;height:16%"></div>
+              <div class="map-block" style="top:35%;left:5%;width:18%;height:16%"></div>
+              <div class="map-block" style="top:35%;left:28%;width:20%;height:16%"></div>
+              <div class="map-block" style="top:60%;left:5%;width:18%;height:12%"></div>
+              <div class="map-block" style="top:60%;left:28%;width:20%;height:12%"></div>
+              <div class="map-block" style="top:60%;left:53%;width:15%;height:12%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Parlons de votre projet</h2>
+        <p class="section-sub">Décrivez-nous votre besoin, on vous répond sous 24h avec une proposition personnalisée.</p>
+      </div>
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm"  action="https://formspree.io/f/xwvwkogq"
+              method="POST"  novalidate>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet, vos objectifs, votre délai..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            Envoyer ma demande
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✓ Message envoyé ! On vous répond sous 24h.
+          </div>
+        </form>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Satisfait de la qualité de la prestation de Jérémy GAULTIER, ainsi que son sens du service pour le SAV du développement."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">lL</div>
+            <div>
+              <strong>Louis Lemarie</strong>
+              <span>Chef de projet, EDF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="contact__aside">
+          <div class="contact-info-card">
+            <h3>Réponse garantie<br />sous 24h</h3>
+            <p>Pas de répondeur automatique. Une vraie personne lit votre message et vous répond personnellement.</p>
+            <div class="contact-methods">
+              <a href="mailto:contact@gaultierweb.com" class="contact-method">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                contact@gaultierweb.com
+              </a>
+              <a href="tel:+33649286637" class="contact-method">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.14 1.2 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.46-.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +33 6 49 28 66 37
+              </a>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Création app de gestion. Jérémy a su répondre parfaitement à ma demande alors que celle-ci était très spécifique. Il a réussi à traduire mon besoin au travers d'un app élaborée, au design épuré et à l'utilisation simplifiée. Réactif et présent, il apporte une solution à chaque problème rencontré. Je n'hésiterai pas à refaire appel à lui et le recommande vivement ! "</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JV</div>
+              <div>
+                <strong>Jonathan Vandamme</strong>
+                <span>CEO</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Prestataire pragmatique dans la définition et le suivi du cahier des charges, compétent dans l’exécution de la mission y compris en matière de proposition d'outils les mieux adaptés pour répondre au cahier des charges. Je le recommande vivement et le ré-engagerais sans hésiter. "</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MF</div>
+              <div>
+                <strong>Mohamed Fall</strong>
+                <span>GreenSYSTECH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ RÉSEAUX SOCIAUX ░░ -->
+  <section id="social" class="section social">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Réseaux sociaux</div>
+        <h2 class="section-title">Suivez l'aventure</h2>
+        <p class="section-sub">Conseils, coulisses, inspirations — rejoignez notre communauté et restez dans la boucle.</p>
+      </div>
+      <div class="social__grid">
+        <a href="https://www.facebook.com/share/1BrNWYxCWz/" target="_blank" class="social-card" style="--accent:#1877F2">
+          <div class="social-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <div class="social-card__info">
+            <strong>Facebook</strong>
+            <span>@gautierweb</span>
+            <p>Actualités et conseils programmation</p>
+          </div>
+          <div class="social-card__arrow">→</div>
+        </a>
+        <a href="https://fr.linkedin.com/in/j%C3%A9r%C3%A9my-gaultier-38986a12b" target="_blank" class="social-card" style="--accent:#0A66C2">
+          <div class="social-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="social-card__info">
+            <strong>LinkedIn</strong>
+            <span>GaultierWeb</span>
+            <p>Expertise &amp; veille digital</p>
+          </div>
+          <div class="social-card__arrow">→</div>
+        </a>
+        <a href="https://www.malt.fr/profile/jeremygaultier" target="_blank" class="social-card" style="--accent:#FC4D0A">
+          <div class="social-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.2 2h-2.4v5.8L7.21 4.21 5.84 5.58 9.42 9.2H2v2.4h7.42l-3.58 3.58 1.37 1.37 4.59-3.58v7.23h2.4v-7.23l4.59 3.58 1.37-1.37-3.58-3.58H22V9.2h-7.42l3.58-3.62-1.37-1.37-4.59 3.59V2z"/></svg>
+          </div>
+          <div class="social-card__info">
+            <strong>Malt</strong>
+            <span>@gautierweb</span>
+            <p>Profil freelance &amp; avis clients</p>
+          </div>
+          <div class="social-card__arrow">→</div>
+        </a>
+        <a href="https://www.codeur.com/-jeveuxmonapp" class="social-card" style="--accent:#FF6B35">
+          <div class="social-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="12" y1="3" x2="12" y2="21" stroke-width="1.5"/></svg>
+          </div>
+          <div class="social-card__info">
+            <strong>Codeur.com</strong>
+            <span>@jeveuxmonapp</span>
+            <p>Profil freelance &amp; projets</p>
+          </div>
+          <div class="social-card__arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo">
+            <span class="logo-bracket">&lt;</span>GaultierWeb<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Votre partenaire digital pour des sites web qui font la différence.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#location">Localisation</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Sites vitrine</a></li>
+              <li><a href="#services">E-commerce</a></li>
+              <li><a href="#services">Applications web et mobile</a></li>
+              <li><a href="#services">SEO</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:contact@gaultierweb.com">contact@gaultierweb.com</a></li>
+              <li><a href="tel:+33649286637">+33 6 49 28 66 37</a></li>
+              <li>Le Puy-en-Velay, France</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 GaultierWeb — Tous droits réservés</p>
+        <div class="footer__legal">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="cgu.html">CGU</a>
+          <a href="CV-technique-a-jour.pdf" target="_blank">CV technique</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
